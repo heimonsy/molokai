@@ -275,6 +275,40 @@ if &t_Co > 255
    endif
 end
 
+" java 中的 public 等关键字
+"hi! link StorageClass Keyword
+
+"hi! link Structure    Keyword
+"hi! link Conditional  Keyword
+"hi! link Repeat       Keyword
+"hi! link Label        Keyword
+"hi! link Operator     Keyword
+"hi! link Keyword      Keyword
+"hi! link Exception    Keyword
+
+" Java
+
+" LightBlue: Define, Special
+
+"   Common groups
+hi! link javaAnnotation       Define
+hi! link javaAssert           Function
+hi! link javaClassDecl        Define
+hi! link javaConditional      Keyword
+hi! link javaExceptions       Keyword
+hi! link javaExternal         Keyword
+hi! link javaRepeat           Keyword
+hi! link javaSpecialChar      Special
+hi! link javaStatement        Keyword
+hi! link javaType             Type
+hi! link javaTypedef          Identifier
+"hi javaTypedef      guifg=#FD971F       gui=italic
+"hi javaTypedef      guifg=#FD971F
+hi! link javaUserLabel        Normal
+hi! link javaUserLabelRef     Normal
+hi! link javaScopeDecl        Keyword
+hi! link javaStorageClass     Keyword
+
 " Must be at the end, because of ctermbg=234 bug.
 " https://groups.google.com/forum/#!msg/vim_dev/afPqwAFNdrU/nqh6tOM87QUJ
 set background=dark
